@@ -123,6 +123,7 @@ vector<Event> read_csv(string filename){
     while(fgets(line, 1024, f)){
         Event e = Event("", 0, unassigned, unassigned, unassigned, 0, 0, 0, 0, 0, 0, 0, 0, 0);
         token = strtok(line, ",");
+        token = strtok(NULL, ",");
         e.name = token;
         token = strtok(NULL, ",");
         e.participation = atoi(token);
@@ -149,7 +150,7 @@ vector<Event> read_csv(string filename){
     return event_vector;
 }
 
-int main(){
+//int main(){
 
     //TEST MAIN FUNCTION BELOW
 
@@ -180,4 +181,22 @@ int main(){
     // }
 
     //^^ TEST MAIN FUNCTION ^^
+//}
+
+int main(int argc, char *argv[]){
+    if(argc < 2) {
+        cout << "No filename provided. Please run the program as follows: ./program filename" << endl;
+        return 1;
+    }
+    string filename = argv[1];
+    vector<Event> event_vector = read_csv(filename);
+
+    Venue v1 = Venue(venue1, 100);
+    Venue v2 = Venue(venue2, 200);
+    Venue v3 = Venue(venue3, 300);
+    array<Venue*, 3> venue_array = {&v1, &v2, &v3};
+
+    for(int i=0; i<event_vector.size(); i++){
+        assign_venue(&event_vector[i], venue_array);
+    }
 }
