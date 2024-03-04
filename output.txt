@@ -1,0 +1,9 @@
+Event event1 assigned to venue venue1 at time preference 1
+Event "Timestamp" assigned to venue venue1 at time preference 1
+Event event1 assigned to venue venue1 at time preference 1
+Event event2 assigned to venue venue2 at time preference 1
+Event event3 assigned to venue venue1 at time preference 3
+Event event4 assigned to venue venue1 at time preference 1
+Event event5 assigned to venue venue1 at time preference 1
+Event event6 assigned to venue venue1 at time preference 1
+Event event7 assigned to venue venue1 at time preference 1
