@@ -61,6 +61,8 @@ class Venue {
     }
 };
 
+
+
 string venueToString(venue_list venue) {
     if (venue==0){
         return "venue1";
@@ -75,6 +77,8 @@ string venueToString(venue_list venue) {
         return "unassigned";
     }
 }
+
+
 
 bool assign_venue(Event* e, array<Venue*, NUM_VENUES> v_array){
     std::ofstream outfile;
