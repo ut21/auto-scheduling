@@ -1,6 +1,9 @@
 # AUTO SCHEDULING
  Automation of event scheduling for college fests
 
+ # TL;DR
+Data is passed to the code as a csv generated through the form mentioned below. The code assigns venues based on availability to events based on first come first serve (whoever fills the form first) for now, but can be changed to based on some key like participation (by sorting the relevant array before passing it to the function). The results are stored in ```output.txt```
+
 # DATA PARSING
 
  The data is collected through a google form having fields similar to: https://forms.gle/LRqcLZ2bfEmgCK168 and then downloaded as a csv file, which is then passed to the program as a command line argument. Pay special attention to the data input formats mentioned in the form. There is a particular way of entering prefered times (in 24h format without colons, and without leading 0s)
