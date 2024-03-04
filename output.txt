@@ -8,3 +8,5 @@ Event event6 assigned to venue venue1 at time preference 1
 Event event7 assigned to venue venue1 at time preference 1
 Event "Event Name" assigned to venue venue1 at time preference 1
 Event "eventTest" assigned to venue venue1 at time preference 1
+Event "Event Name" assigned to venue venue1 at time preference 1
+Event "eventTest" assigned to venue venue1 at time preference 1
